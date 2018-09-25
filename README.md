@@ -1,8 +1,6 @@
 # UE4 Tech Team Style Guide {
 
-*Our approach to Unreal Engine 4*
-
-This heavily relies on the [Gamemakin UE4 Style Guide](https://github.com/Allar/ue4-style-guide).
+This guide relies heavily on the [Gamemakin UE4 Style Guide](https://github.com/Allar/ue4-style-guide).
 
 ## Gamemaking Style Guide Principles and Terminology
 
@@ -19,6 +17,7 @@ Terminology used in this guide is explained [here](https://github.com/Allar/ue4-
 > 1. [Particle Systems](#ps)
 > 1. [Levels / Maps](#levels)
 > 1. [Textures](#textures)
+> 1. [C++ Source](#cppsource)
 
 <a name="anc"></a>
 <a name="1"></a>
@@ -205,7 +204,8 @@ This section can change slightly in future so if you feel that some of the prefi
 
 <a name="anc-textures-packing"></a>
 <a name="1.2.6.1"></a>
-#### 1.2.6.1 Texture Packing !It is common practice to pack multiple layers of texture data into one texture. An example of this is packing Emissive, Roughness, Ambient Occlusion together as the Red, Green, and Blue channels of a texture respectively. To determine the suffix, simply stack the given suffix letters from above together, e.g. `_ERO`.
+#### 1.2.6.1 Texture Packing !
+It is common practice to pack multiple layers of texture data into one texture. An example of this is packing Emissive, Roughness, Ambient Occlusion together as the Red, Green, and Blue channels of a texture respectively. To determine the suffix, simply stack the given suffix letters from above together, e.g. `_ERO`.
 
 > It is generally acceptable to include an Alpha/Opacity layer in your Diffuse/Albedo's alpha channel and as this is common practice, adding `A` to the `_D` suffix is optional.
 
